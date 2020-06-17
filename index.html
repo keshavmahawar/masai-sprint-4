@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <title>Vroom Booking</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h1 class="text-white mx-2">Vroom</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Book vehicle</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bookings</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="mt-5" id="step-1">
+            <div class="form-inline form-control-lg">
+                <div class="form-check m-2">
+                    <input class="form-check-input" type="radio" name="tripType" id="exampleRadios1" value="roundTrip" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                    One Way
+                    </label>
+                </div>
+                <div class="form-check m-2">
+                    <input class="form-check-input" type="radio" name="tripType" id="exampleRadios1" value="oneWay" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                    Round Trip
+                    </label>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-md-6">
+                    <h1>Enter Pickup Location</h1>
+                    <input type="text" class="form-control form-control-lg" id="location" >
+                </div>
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <h1>Enter Drop Location</h1>
+                    <input type="text" class="form-control form-control-lg" id="location">
+                </div>
+            </div>
+        </div>
+        <div class="mt-5" id="step-2">
+            <div class="row my-5">
+                <div class="col-12 col-md-6">
+                    <h1>Select Pickup Date</h1>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="Date Select">Date</label>
+                          <select class="custom-select mr-sm-2" id="Date Select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="Date Select">Month</label>
+                            <select class="custom-select mr-sm-2" id="Date Select">
+                              <option value="1">Jan</option>
+                              <option value="2">Feb</option>
+                              <option value="3">Mar</option>
+                              <option value="4">Apr</option>
+                              <option value="5">May</option>
+                              <option value="6">Jun</option>
+                              <option value="7">Jul</option>
+                              <option value="8">Aug</option>
+                              <option value="9">Sep</option>
+                              <option value="10">Oct</option>
+                              <option value="11">Nov</option>
+                              <option value="12">Dec</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="Date Select">Year</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <h1>Enter Pickup Time</h1>
+                    <label for="">Hour Minutes</label>
+                    <input type="text" name="pickupTime" class="form-control" id="" placeholder="HH:MM">    
+                </div>
+            </div>
+        </div>
+        <div class="mt-5" id="step-2">
+            <div class="row my-5">
+                <div class="col-12 col-md-6">
+                    <h1>Select Drop Date</h1>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="Date Select">Date</label>
+                          <select class="custom-select mr-sm-2" id="Date Select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="Date Select">Month</label>
+                            <select class="custom-select mr-sm-2" id="Date Select">
+                              <option value="1">Jan</option>
+                              <option value="2">Feb</option>
+                              <option value="3">Mar</option>
+                              <option value="4">Apr</option>
+                              <option value="5">May</option>
+                              <option value="6">Jun</option>
+                              <option value="7">Jul</option>
+                              <option value="8">Aug</option>
+                              <option value="9">Sep</option>
+                              <option value="10">Oct</option>
+                              <option value="11">Nov</option>
+                              <option value="12">Dec</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="Date Select">Year</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <h1>Enter Drop Time</h1>
+                    <label for="">Hour Minutes</label>
+                    <input type="text" name="pickupTime" class="form-control" id="" placeholder="HH:MM">    
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar footer fixed-bottom navbar-expand-lg navbar-dark bg-dark">
+        <div class="mx-2">
+            <h4 class="text-secondary">Pick and Drop Point</h4>
+            <h6 class="text-white">
+                a & b
+            </h6>
+        </div>
+        <h3 class="text-white mx-2"> > </h3>
+        <div class="mx-2">
+            <h4 class="text-secondary">Pickup Time</h3>
+            <h6 class="text-white">
+                 17th june<br>
+                 01:00 Am
+            </h6>
+        </div>
+        <h3 class="text-white mx-2"> > </h3>
+        <div class="mx-2">
+            <h4 class="text-secondary">Drop Time</h4>
+            <h6 class="text-white">
+                 18th june<br>
+                 01:00 Am
+            </h6>
+        </div>
+        <div class="ml-auto">
+            <button class="btn btn-success btn-lg mr-4">Next</button>
+        </div>
+    </nav>
+    <script src="resources/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="resources/js/popper.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+  </body>
+</html>
